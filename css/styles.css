@@ -300,8 +300,8 @@ ul { list-style: none; }
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: var(--s6) var(--s8);
+  justify-content: flex-start;
+  padding: var(--s8) var(--s8) var(--s6);
 }
 .mobile-nav-links a {
   font-family: var(--font-serif);
@@ -325,13 +325,10 @@ ul { list-style: none; }
   padding: var(--s6) var(--s8) var(--s10);
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: flex-start;
   gap: var(--s4);
 }
 .mobile-nav-footer .btn {
-  width: 100%;
-  text-align: center;
-  justify-content: center;
   font-size: 16px;
 }
 .mobile-nav-tagline {
@@ -343,6 +340,10 @@ ul { list-style: none; }
   margin: 0;
 }
 .hamburger.open span { background: #fff; }
+#navbar.menu-open .brand { color: #fff; }
+#navbar.menu-open .tagline { color: rgba(255,255,255,0.5); }
+#navbar.menu-open.scrolled .brand { color: var(--green-dark); }
+#navbar.menu-open.scrolled .tagline { color: var(--text-tertiary); }
 
 /* ── HERO ───────────────────────────────────────────────── */
 #hero {
@@ -1665,7 +1666,7 @@ footer {
   #hero {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     min-height: 100vh;
     padding-top: 0;
     background-image: url('../img/ChatGPT Image May 28, 2026 at 11_13_52 AM.png');
@@ -1675,17 +1676,17 @@ footer {
   .hero-bg {
     background: linear-gradient(
       to bottom,
-      rgba(248,247,244,0.05) 0%,
-      rgba(248,247,244,0.55) 38%,
-      rgba(248,247,244,0.93) 58%,
-      rgba(248,247,244,0.98) 100%
+      rgba(248,247,244,0.08) 0%,
+      rgba(248,247,244,0.72) 22%,
+      rgba(248,247,244,0.92) 45%,
+      rgba(248,247,244,0.96) 100%
     );
   }
   .hero-bg::before { display: none; }
   .hero-content {
     display: flex;
     flex-direction: column;
-    padding: var(--s8) var(--s6) var(--s10);
+    padding: calc(72px + var(--s16)) var(--s6) var(--s10);
     text-align: center;
   }
   .hero-eyebrow {
@@ -1736,6 +1737,6 @@ footer {
 
 @media (max-width: 480px) {
   .hero-h1 { font-size: 44px; }
-  .hero-ctas { flex-direction: column; }
+  .hero-ctas { flex-direction: column; align-items: center; }
   .btn { min-height: 44px; }
 }

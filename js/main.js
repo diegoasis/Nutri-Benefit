@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
       const isOpen = hamburger.classList.toggle('open');
       mobileNav.classList.toggle('open', isOpen);
+      navbar.classList.toggle('menu-open', isOpen);
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
@@ -35,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         hamburger.classList.remove('open');
         mobileNav.classList.remove('open');
+        navbar.classList.remove('menu-open');
         document.body.style.overflow = '';
       });
     });
