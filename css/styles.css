@@ -905,6 +905,8 @@ body.menu-open #navbar .hamburger span { background: #fff; }
   margin-bottom: var(--s6);
 }
 
+.service-cta { justify-content: center; }
+
 .service-tags {
   display: flex;
   flex-wrap: wrap;
