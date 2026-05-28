@@ -340,16 +340,15 @@ ul { list-style: none; }
   margin: 0;
 }
 .hamburger.open span { background: #fff; }
-#navbar.menu-open {
-  background: var(--bg-dark);
-  box-shadow: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+body.menu-open #navbar {
+  background: var(--bg-dark) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
-#navbar.menu-open .brand { color: #a8d5b5; }
-#navbar.menu-open .tagline { color: rgba(168,213,181,0.55); }
-#navbar.menu-open.scrolled .brand { color: #a8d5b5; }
-#navbar.menu-open.scrolled .tagline { color: rgba(168,213,181,0.55); }
+body.menu-open #navbar .brand { color: #a8d5b5 !important; }
+body.menu-open #navbar .tagline { color: rgba(168,213,181,0.55) !important; }
+body.menu-open #navbar .hamburger span { background: #fff; }
 
 /* ── HERO ───────────────────────────────────────────────── */
 #hero {
@@ -1675,7 +1674,7 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     min-height: 100vh;
-    padding-top: 0;
+    padding-top: 110px;
     background-image: url('../img/ChatGPT Image May 28, 2026 at 11_13_52 AM.png');
     background-size: cover;
     background-position: top center;
@@ -1693,7 +1692,7 @@ footer {
   .hero-content {
     display: flex;
     flex-direction: column;
-    padding: 88px var(--s6) var(--s10);
+    padding: var(--s6) var(--s6) var(--s10);
     text-align: center;
   }
   .hero-eyebrow {
