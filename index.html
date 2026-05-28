@@ -165,10 +165,7 @@
         <div class="sobre-grid">
           <div class="sobre-photo-wrap fade-up">
             <div class="sobre-photo-frame">
-              <!-- Sustituir por: <img src="img/laura-sobre.jpg" alt="Laura Ruiz en la silla del juez"> -->
-              <div class="sobre-photo-placeholder">
-                <span>📸 Foto de Laura</span>
-              </div>
+              <img src="img/ChatGPT Image May 28, 2026 at 12_29_39 PM.png" alt="Laura Ruiz, nutricionista deportiva">
             </div>
           </div>
 
@@ -549,28 +546,29 @@
             <!-- Formulario -->
             <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate aria-label="Formulario de consulta">
               <!-- Web3Forms key — sustituir por la tuya en https://web3forms.com -->
-              <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI">
-              <input type="hidden" name="subject" value="Nueva consulta - Nutri-Benefit">
-              <input type="hidden" name="from_name" value="Nutri-Benefit Web">
+              <input type="hidden" name="access_key" value="c7cb0ab5-a691-4462-b1c5-0c293da45c98">
+              <input type="hidden" name="subject" value="🎾 Nueva consulta desde Nutri-Benefit">
+              <input type="hidden" name="from_name" value="Nutri-Benefit">
+              <input type="hidden" name="redirect" value="https://nutri-benefit.com/gracias.html">
 
               <!-- Honeypot anti-spam -->
               <input type="checkbox" name="botcheck" style="display:none">
 
               <div class="form-group group-name">
                 <label for="name">Tu nombre <span aria-hidden="true">*</span></label>
-                <input type="text" id="name" name="name" placeholder="¿Cómo te llamas?" autocomplete="given-name" required>
+                <input type="text" id="name" name="Nombre" placeholder="¿Cómo te llamas?" autocomplete="given-name" required>
                 <span class="form-error-msg" role="alert"></span>
               </div>
 
               <div class="form-group group-email">
                 <label for="email">Tu email <span aria-hidden="true">*</span></label>
-                <input type="email" id="email" name="email" placeholder="tu@email.com" autocomplete="email" required>
+                <input type="email" id="email" name="Email" placeholder="tu@email.com" autocomplete="email" required>
                 <span class="form-error-msg" role="alert"></span>
               </div>
 
               <div class="form-group">
                 <label for="plan">¿Qué servicio te interesa?</label>
-                <select id="plan" name="plan">
+                <select id="plan" name="Servicio de interés">
                   <option value="">Selecciona un servicio...</option>
                   <option value="plan-nutri-tenis">Plan Nutri-Tenis</option>
                   <option value="semana-de-torneo">Semana de Torneo</option>
@@ -581,7 +579,7 @@
 
               <div class="form-group">
                 <label for="nivel">¿Cómo juegas?</label>
-                <select id="nivel" name="nivel">
+                <select id="nivel" name="Nivel de juego">
                   <option value="">Selecciona tu nivel...</option>
                   <option value="amateur">Amateur (juego por placer)</option>
                   <option value="competitivo">Amateur competitivo (torneos locales / provinciales)</option>
@@ -593,7 +591,7 @@
 
               <div class="form-group">
                 <label for="message">Cuéntame sobre ti y qué quieres conseguir</label>
-                <textarea id="message" name="message" rows="4" placeholder="¿Cuántos días entrenas? ¿Juegas torneos? ¿Qué te frena ahora mismo?"></textarea>
+                <textarea id="message" name="Mensaje" rows="4" placeholder="¿Cuántos días entrenas? ¿Juegas torneos? ¿Qué te frena ahora mismo?"></textarea>
               </div>
 
               <div class="form-checkbox-group form-group group-rgpd">
@@ -615,7 +613,9 @@
 
             <!-- Mensaje de éxito -->
             <div id="form-success" class="form-success" role="status" aria-live="polite">
-              <div class="form-success-icon">✅</div>
+              <div class="form-success-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
               <h3>¡Mensaje recibido!</h3>
               <p>Te escribiré en menos de 24 horas para confirmar la llamada. ¡Hasta pronto!</p>
             </div>

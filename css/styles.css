@@ -1347,7 +1347,7 @@ ul { list-style: none; }
   padding: var(--s12) var(--s8);
 }
 .form-success.visible { display: block; }
-.form-success-icon { font-size: 48px; margin-bottom: var(--s4); }
+.form-success-icon { margin-bottom: var(--s4); color: var(--green-dark); }
 .form-success h3 {
   font-family: var(--font-serif);
   font-size: 24px;
