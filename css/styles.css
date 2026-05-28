@@ -1187,7 +1187,7 @@ body.menu-open #navbar .hamburger span { background: #fff; }
   font-weight: 700;
   color: var(--yellow);
   line-height: 1;
-  margin-bottom: var(--s2);
+  margin-bottom: var(--s4);
 }
 
 .caso-stat span {
