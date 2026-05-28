@@ -1269,6 +1269,14 @@ body.menu-open #navbar .hamburger span { background: #fff; }
   color: var(--text-secondary);
 }
 
+.whatsapp-inline-link {
+  color: #25D366;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.whatsapp-inline-link:hover { color: #1da851; }
+
 /* Form styles */
 .form-card {
   background: #fff;
