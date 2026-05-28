@@ -281,6 +281,7 @@ ul { list-style: none; }
 .mobile-nav {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   position: fixed;
   inset: 0;
   background: var(--bg-dark);
@@ -297,11 +298,9 @@ ul { list-style: none; }
   pointer-events: auto;
 }
 .mobile-nav-links {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: var(--s8) var(--s8) var(--s6);
+  padding: 0 var(--s8);
 }
 .mobile-nav-links a {
   font-family: var(--font-serif);
@@ -322,11 +321,10 @@ ul { list-style: none; }
   transform: translateX(6px);
 }
 .mobile-nav-footer {
-  padding: var(--s6) var(--s8) var(--s10);
+  padding: var(--s3) var(--s8) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--s4);
 }
 .mobile-nav-footer .btn {
   font-size: 16px;
@@ -1623,8 +1621,8 @@ footer {
   .cookie-banner-actions { width: 100%; }
   .btn-cookie-accept, .btn-cookie-reject { flex: 1; justify-content: center; text-align: center; }
   /* Evitar que el FAB de WhatsApp quede tapado por el banner */
-  .whatsapp-fab { bottom: 100px; }
-  #cookie-banner.hidden ~ .whatsapp-fab { bottom: var(--s6); }
+  .whatsapp-fab { bottom: 80px; }
+  #cookie-banner.hidden ~ .whatsapp-fab { bottom: var(--s2); }
 }
 
 /* ── ANIMATIONS ─────────────────────────────────────────── */
@@ -1673,7 +1671,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 100vh;
+    min-height: auto;
     padding-top: 110px;
     background-image: url('../img/ChatGPT Image May 28, 2026 at 11_13_52 AM.png');
     background-size: cover;
@@ -1703,7 +1701,7 @@ footer {
     align-self: center;
   }
   .hero-h1 { font-size: 52px; margin-bottom: var(--s3); }
-  .hero-h2 { font-size: 17px; margin: 0 auto var(--s4); }
+  .hero-h2 { font-size: 15px; margin: 0 auto var(--s4); }
   .hero-ctas { justify-content: center; }
   .hero-credentials { justify-content: center; }
   .hero-visual { display: none; }
